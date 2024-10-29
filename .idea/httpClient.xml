@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HttpClientEndpointsTabState">
+    <option name="requestToText" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;bb76ba1c54d0c03d9964e423648d01182fb1f69e&quot; value=&quot;###&amp;#10;POST http://localhost:8080/api/orders&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;{&amp;#10;  &amp;quot;id&amp;quot;: 0,&amp;#10;  &amp;quot;orderNumber&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;orderDate&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;status&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;totalAmount&amp;quot;: {},&amp;#10;  &amp;quot;depositAmount&amp;quot;: {},&amp;#10;  &amp;quot;specialRequests&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;checkinTime&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;cancellationReason&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;customer&amp;quot;: {},&amp;#10;  &amp;quot;tour&amp;quot;: {},&amp;#10;  &amp;quot;salesStaff&amp;quot;: {},&amp;#10;  &amp;quot;consultant&amp;quot;: {},&amp;#10;  &amp;quot;koiPurchases&amp;quot;: [],&amp;#10;  &amp;quot;payments&amp;quot;: [],&amp;#10;  &amp;quot;quotations&amp;quot;: [],&amp;#10;  &amp;quot;feedbacks&amp;quot;: []&amp;#10;}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+  </component>
+</project>

@@ -1,0 +1,713 @@
+2024-10-28 17:57:42 [main] INFO  com.koisystem.KoiSystemApplication - Starting KoiSystemApplication using Java 17.0.8 on DESKTOP-S9KQU3O with PID 8080 (F:\HSF\ProjectLab-\hsf24\target\classes started by trung in F:\HSF\ProjectLab-\hsf24)
+2024-10-28 17:57:42 [main] INFO  com.koisystem.KoiSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-28 17:57:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-28 17:57:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-10-28 17:57:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-28 17:57:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-28 17:57:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-10-28 17:57:47 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-28 17:57:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 17:57:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 17:57:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-10-28 17:57:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 17:57:56 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1d614d8a-89b0-4d77-a0ea-6d5d87345972
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-28 17:57:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-28 17:57:58 [main] INFO  com.koisystem.KoiSystemApplication - Started KoiSystemApplication in 17.038 seconds (JVM running for 18.339)
+2024-10-28 17:57:58 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 17:57:58
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 17:57:59 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 17:57:59
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 481ms
+Return Value: true
+=============================
+2024-10-28 17:57:59 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 17:57:59
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="sales"
+==========================
+2024-10-28 17:57:59 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 17:57:59
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 120ms
+Return Value: true
+=============================
+2024-10-28 17:57:59 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 17:57:59
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="consultant"
+==========================
+2024-10-28 17:57:59 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 17:57:59
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 119ms
+Return Value: true
+=============================
+2024-10-28 18:01:21 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-28 18:01:22 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:01:22
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:01:22 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:01:22
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:01:22 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:01:22
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Execution Time: 273ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:01:22 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:01:22
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Execution Time: 301ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:01:22 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:01:22
+Package: com.koisystem.services
+Class: UserService
+Method: getUserById
+Return Type: UserInfo
+Parameters: id=5
+==========================
+2024-10-28 18:01:22 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:01:22
+Package: org.springframework.data.repository
+Class: CrudRepository
+Method: findById
+Return Type: Optional
+Parameters: id=5
+==========================
+2024-10-28 18:01:23 [http-nio-8080-exec-1] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:01:23
+Package: org.springframework.data.repository
+Class: CrudRepository
+Method: findById
+Execution Time: 790ms
+Return Value: Optional.empty
+=============================
+2024-10-28 18:01:23 [http-nio-8080-exec-1] ERROR com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Error ===
+Timestamp: 2024-10-28 18:01:23
+Package: com.koisystem.services
+Class: UserService
+Method: getUserById
+Execution Time: 798ms
+Error Type: RuntimeException
+Error Message: User not found
+Stack Trace: com.koisystem.services.UserService.lambda$getUserById$0(UserService.java:22)
+java.base/java.util.Optional.orElseThrow(Optional.java:403)
+com.koisystem.services.UserService.getUserById(UserService.java:22)
+com.koisystem.services.UserService$$FastClassBySpringCGLIB$$841b0881.invoke(<generated>)
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+===========================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Execution Time: 235ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Execution Time: 237ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.services
+Class: UserService
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 119ms
+Return Value: true
+=============================
+2024-10-28 18:11:16 [http-nio-8080-exec-3] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:16
+Package: com.koisystem.services
+Class: UserService
+Method: existsByUsername
+Execution Time: 120ms
+Return Value: true
+=============================
+2024-10-28 18:11:27 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:27
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:27 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:27
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:28 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:28
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Execution Time: 238ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:11:28 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:28
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Execution Time: 239ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:11:28 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:28
+Package: com.koisystem.services
+Class: UserService
+Method: getUserByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:28 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:11:28
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:11:28 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:28
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Execution Time: 119ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:11:28 [http-nio-8080-exec-2] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:11:28
+Package: com.koisystem.services
+Class: UserService
+Method: getUserByUsername
+Execution Time: 121ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:13:25 [http-nio-8080-exec-5] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:13:25
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:13:25 [http-nio-8080-exec-5] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 18:13:25
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Return Type: UserInfo
+Parameters: username="admin"
+==========================
+2024-10-28 18:13:25 [http-nio-8080-exec-5] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:13:25
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: findByUsername
+Execution Time: 236ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:13:25 [http-nio-8080-exec-5] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 18:13:25
+Package: com.koisystem.services
+Class: UserDetailsService
+Method: loadUserByUsername
+Execution Time: 238ms
+Return Value: UserInfo(id=1, username=admin, password=$2a$10$Tl7twJnT0HtlC/TF/Hzc/.0OZAmD32ov4I.cRQHtDpxiux17oxrUy, email=admin@koisystem.com, fullName=System Administrator, phone=0123456789, address=System Address, role=ADMIN)
+=============================
+2024-10-28 18:19:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-28 19:41:36 [main] INFO  com.koisystem.KoiSystemApplication - Starting KoiSystemApplication using Java 17.0.8 on DESKTOP-S9KQU3O with PID 23276 (F:\HSF\ProjectLab-\hsf24\target\classes started by trung in F:\HSF\ProjectLab-\hsf24)
+2024-10-28 19:41:36 [main] INFO  com.koisystem.KoiSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-28 19:41:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-28 19:41:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-10-28 19:41:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-28 19:41:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-28 19:41:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-10-28 19:41:39 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-28 19:41:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 19:41:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 19:41:41 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-10-28 19:41:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 19:41:48 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 610088f5-a609-4682-af27-a7a822438c2f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-28 19:41:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-28 19:41:50 [main] INFO  com.koisystem.KoiSystemApplication - Started KoiSystemApplication in 14.43 seconds (JVM running for 15.666)
+2024-10-28 19:41:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 19:41:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 19:41:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 19:41:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 303ms
+Return Value: true
+=============================
+2024-10-28 19:41:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 19:41:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="sales"
+==========================
+2024-10-28 19:41:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 19:41:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 116ms
+Return Value: true
+=============================
+2024-10-28 19:41:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 19:41:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="consultant"
+==========================
+2024-10-28 19:41:51 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 19:41:51
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 117ms
+Return Value: true
+=============================
+2024-10-28 20:24:06 [main] INFO  com.koisystem.KoiSystemApplication - Starting KoiSystemApplication using Java 17.0.8 on DESKTOP-S9KQU3O with PID 12104 (F:\HSF\ProjectLab-\hsf24\target\classes started by trung in F:\HSF\ProjectLab-\hsf24)
+2024-10-28 20:24:06 [main] INFO  com.koisystem.KoiSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-28 20:24:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-28 20:24:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-10-28 20:24:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-28 20:24:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-28 20:24:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-10-28 20:24:09 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-28 20:24:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 20:24:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 20:24:11 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-10-28 20:24:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 20:24:17 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 447e9f6c-6e7a-4dfd-a3aa-3bf37795bcfa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-28 20:24:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-28 20:24:18 [main] INFO  com.koisystem.KoiSystemApplication - Started KoiSystemApplication in 12.859 seconds (JVM running for 14.002)
+2024-10-28 20:24:18 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 20:24:18
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 20:24:18 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 20:24:18
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 306ms
+Return Value: true
+=============================
+2024-10-28 20:24:18 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 20:24:18
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="sales"
+==========================
+2024-10-28 20:24:19 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 20:24:19
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 124ms
+Return Value: true
+=============================
+2024-10-28 20:24:19 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 20:24:19
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="consultant"
+==========================
+2024-10-28 20:24:19 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 20:24:19
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 126ms
+Return Value: true
+=============================
+2024-10-28 20:43:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-28 20:43:50 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 802 ms
+2024-10-28 21:08:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-28 21:08:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-28 21:08:15 [main] INFO  com.koisystem.KoiSystemApplication - Starting KoiSystemApplication using Java 17.0.8 on DESKTOP-S9KQU3O with PID 7584 (F:\HSF\ProjectLab-\hsf24\target\classes started by trung in F:\HSF\ProjectLab-\hsf24)
+2024-10-28 21:08:15 [main] INFO  com.koisystem.KoiSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-28 21:08:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-28 21:08:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-10-28 21:08:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-28 21:08:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-28 21:08:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-10-28 21:08:17 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-28 21:08:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 21:08:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 21:08:19 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-10-28 21:08:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 21:08:24 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0e6490d3-0264-4a34-ac3f-14e40bef54d3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-28 21:08:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-28 21:08:25 [main] INFO  com.koisystem.KoiSystemApplication - Started KoiSystemApplication in 10.705 seconds (JVM running for 11.504)
+2024-10-28 21:08:25 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:08:25
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 21:08:26 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:08:26
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 291ms
+Return Value: true
+=============================
+2024-10-28 21:08:26 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:08:26
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="sales"
+==========================
+2024-10-28 21:08:26 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:08:26
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 125ms
+Return Value: true
+=============================
+2024-10-28 21:08:26 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:08:26
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="consultant"
+==========================
+2024-10-28 21:08:26 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:08:26
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 125ms
+Return Value: true
+=============================
+2024-10-28 21:08:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-28 21:09:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-28 21:09:03 [main] INFO  com.koisystem.KoiSystemApplication - Starting KoiSystemApplication using Java 17.0.8 on DESKTOP-S9KQU3O with PID 20484 (F:\HSF\ProjectLab-\hsf24\target\classes started by trung in F:\HSF\ProjectLab-\hsf24)
+2024-10-28 21:09:03 [main] INFO  com.koisystem.KoiSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-28 21:09:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-28 21:09:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-10-28 21:09:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-28 21:09:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-28 21:09:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-10-28 21:09:05 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-28 21:09:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 21:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 21:09:07 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-10-28 21:09:12 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 21:09:13 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 27150145-2be3-4d43-8ae5-02b596836316
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-28 21:09:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-28 21:09:14 [main] INFO  com.koisystem.KoiSystemApplication - Started KoiSystemApplication in 11.413 seconds (JVM running for 12.096)
+2024-10-28 21:09:14 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:09:14
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 21:09:14 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:09:14
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 275ms
+Return Value: true
+=============================
+2024-10-28 21:09:14 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:09:14
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="sales"
+==========================
+2024-10-28 21:09:14 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:09:14
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 118ms
+Return Value: true
+=============================
+2024-10-28 21:09:14 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:09:14
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="consultant"
+==========================
+2024-10-28 21:09:14 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:09:14
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 116ms
+Return Value: true
+=============================
+2024-10-28 21:16:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-28 21:24:38 [main] INFO  com.koisystem.KoiSystemApplication - Starting KoiSystemApplication using Java 17.0.8 on DESKTOP-S9KQU3O with PID 9632 (F:\HSF\ProjectLab-\hsf24\target\classes started by trung in F:\HSF\ProjectLab-\hsf24)
+2024-10-28 21:24:38 [main] INFO  com.koisystem.KoiSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-28 21:24:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-28 21:24:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-10-28 21:24:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-28 21:24:41 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-28 21:24:41 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2024-10-28 21:24:41 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-28 21:24:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-28 21:24:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-28 21:24:43 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-10-28 21:24:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 21:24:48 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 39f6aec1-d19f-4a52-ba14-a91d22d9cf31
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-28 21:24:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-28 21:24:49 [main] INFO  com.koisystem.KoiSystemApplication - Started KoiSystemApplication in 12.043 seconds (JVM running for 13.063)
+2024-10-28 21:24:49 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:24:49
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="admin"
+==========================
+2024-10-28 21:24:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:24:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 271ms
+Return Value: true
+=============================
+2024-10-28 21:24:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:24:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="sales"
+==========================
+2024-10-28 21:24:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:24:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 116ms
+Return Value: true
+=============================
+2024-10-28 21:24:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Start ===
+Timestamp: 2024-10-28 21:24:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Return Type: boolean
+Parameters: username="consultant"
+==========================
+2024-10-28 21:24:50 [main] INFO  com.koisystem.aspect.LoggingAspect - 
+=== Method Execution Success ===
+Timestamp: 2024-10-28 21:24:50
+Package: com.koisystem.repositories
+Class: UserRepository
+Method: existsByUsername
+Execution Time: 115ms
+Return Value: true
+=============================
+2024-10-28 23:46:41 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-28 23:46:42 [http-nio-8080-exec-3] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 743 ms
